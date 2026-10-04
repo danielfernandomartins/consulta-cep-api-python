@@ -1,90 +1,50 @@
 # 📍 Consulta de CEP via API com Python
 
-Aplicação em Python para consulta de endereço a partir de CEP, utilizando integração com serviço externo.
+Aplicação em Python para consulta de endereço a partir de CEP usando uma API externa.
 
-## Objetivo
+## O que o projeto demonstra
 
-Demonstrar consumo de API REST, tratamento de respostas JSON e validação de entrada em um fluxo simples e próximo de rotinas cadastrais reais.
-
-## Funcionalidades
-
-- Consulta de endereço por CEP
-- Validação básica do formato informado
-- Consumo de API externa
-- Tratamento de CEP inexistente
-- Tratamento de falhas de comunicação
-- Exibição estruturada dos dados retornados
-
-## Fluxo da aplicação
-
-1. Usuário informa o CEP.
-2. A aplicação valida o formato.
-3. É realizada uma requisição HTTP.
-4. A resposta JSON é processada.
-5. Os dados de endereço são apresentados.
-
-## Competências demonstradas
-
-- Integração com serviços externos
+- Consumo de API REST
 - Requisições HTTP
-- Manipulação de JSON
-- Tratamento de exceções
+- Leitura de JSON
 - Validação de entrada
-- Separação de fluxo em funções
-- Diagnóstico básico de falha de comunicação
-- Leitura de resposta de serviço externo
+- Tratamento de exceções
+- Diagnóstico básico de falhas de comunicação
 
-## Visão para Operações de TI
+## Fluxo
 
-Este projeto se conecta diretamente com atividades de suporte e operações porque exige entender requisição, resposta, erro, indisponibilidade e validação de dados.
+1. O usuário informa o CEP.
+2. A aplicação valida o formato.
+3. É feita a requisição ao serviço externo.
+4. A resposta HTTP é analisada.
+5. O JSON retornado é processado.
+6. O endereço é apresentado ao usuário.
 
-### Como eu investigaria uma falha
+## Visão para Suporte e Operações de TI
 
-1. Validaria o dado informado pelo usuário.
-2. Confirmaria conectividade com o serviço externo.
-3. Verificaria o código de resposta HTTP.
-4. Analisaria o JSON retornado.
-5. Separaria erro de entrada, erro da aplicação e indisponibilidade externa.
+Se a consulta falhar, eu separo a análise em camadas:
 
-## Como explicar em entrevista
-
-> "Esse projeto trabalha com um fluxo real de integração. Se a consulta falha, eu preciso descobrir se o problema está no dado informado, na conexão, na API externa ou no tratamento da resposta. Esse raciocínio de diagnóstico é o que quero levar para uma função operacional de TI."
-- Diagnóstico básico de falha de comunicação
-- Leitura de resposta de serviço externo
-- Tratamento de cenário inválido para o usuário
-
-## Visão para Operações de TI
-
-Este projeto se conecta diretamente com atividades de suporte e operações porque exige entender **requisição, resposta, erro, indisponibilidade e validação de dados**.
-
-### Como eu investigaria uma falha
-
-1. Validaria o dado informado pelo usuário.
-2. Confirmaria conectividade com o serviço externo.
-3. Verificaria o código de resposta HTTP.
-4. Analisaria o JSON retornado.
-5. Separaria erro de entrada, erro da aplicação e indisponibilidade externa.
-6. Registraria a causa e a ação tomada.
+1. Validar o dado informado.
+2. Confirmar conectividade.
+3. Verificar o status HTTP.
+4. Conferir o conteúdo retornado.
+5. Identificar se a falha está na entrada, aplicação ou serviço externo.
+6. Registrar a causa e a ação tomada.
 
 ## Como explicar em entrevista
 
-> "Esse projeto é simples, mas é muito útil para suporte e operações porque trabalha com um fluxo real de integração. Se a consulta falha, eu preciso descobrir se o problema está no dado informado, na conexão, na API externa ou no tratamento da resposta. Esse raciocínio de diagnóstico é o que quero levar para uma função operacional de TI."
+> "Esse projeto me ajuda a demonstrar troubleshooting em uma integração simples. Se a consulta falha, eu procuro descobrir se o problema está no dado informado, na comunicação com a API ou no tratamento da resposta. O objetivo é isolar a causa antes de escalar ou corrigir."
 
 ## Tecnologias
 
-**Python** • **requests** • **ViaCEP** • **JSON**
-
-## Aplicação em contexto de negócio
-
-Consultas de endereço são comuns em processos de **cadastro de clientes, onboarding, validação de dados e operações comerciais**. O projeto mostra como uma informação externa pode ser incorporada a um fluxo operacional.
+**Python • requests • ViaCEP • JSON**
 
 ## Próximas evoluções
 
-- Validação mais robusta
-- Interface gráfica ou web
-- Cache de consultas
-- Persistência de dados
 - Testes automatizados
+- Persistência de consultas
+- Logs estruturados
+- Interface web
 - Integração com cadastro de clientes
 
 ## Autor
