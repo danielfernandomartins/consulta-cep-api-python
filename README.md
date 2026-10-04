@@ -1,54 +1,54 @@
-# Consulta de CEP com API em Python
+# 📍 Consulta de CEP via API com Python
 
-Aplicação desenvolvida em Python para consultar endereços a partir de um CEP utilizando integração com uma API externa.
+Aplicação em Python para consulta de endereço a partir de CEP, utilizando integração com serviço externo.
 
-O usuário informa um CEP e o sistema retorna informações como logradouro, bairro, cidade e estado.
+## Objetivo
+
+Demonstrar consumo de API REST, tratamento de respostas JSON e validação de entrada em um fluxo simples e próximo de rotinas cadastrais reais.
 
 ## Funcionalidades
 
 - Consulta de endereço por CEP
-- Validação básica do CEP informado
-- Integração com API externa
+- Validação básica do formato informado
+- Consumo de API externa
 - Tratamento de CEP inexistente
 - Tratamento de falhas de comunicação
-- Exibição organizada dos dados retornados
+- Exibição estruturada dos dados retornados
 
-## Conceitos aplicados
+## Fluxo da aplicação
 
-- Python
-- Funções
-- Estruturas condicionais
-- Loops
-- Manipulação de strings
+1. Usuário informa o CEP.
+2. A aplicação valida o formato.
+3. É realizada uma requisição HTTP.
+4. A resposta JSON é processada.
+5. Os dados de endereço são apresentados.
+
+## Competências demonstradas
+
+- Integração com serviços externos
 - Requisições HTTP
-- Consumo de API externa
-- JSON
+- Manipulação de JSON
 - Tratamento de exceções
+- Validação de entrada
+- Separação de fluxo em funções
 
-## Tecnologias utilizadas
+## Tecnologias
 
-- Python
-- Biblioteca `requests`
-- API ViaCEP
-- Google Colab
-- GitHub
+**Python** • **requests** • **ViaCEP** • **JSON**
 
-## Como funciona
+## Aplicação em contexto de negócio
 
-1. O usuário informa um CEP.
-2. O sistema valida se o CEP possui 8 dígitos.
-3. A aplicação realiza uma requisição para a API ViaCEP.
-4. A resposta é recebida em formato JSON.
-5. Os dados são processados e exibidos ao usuário.
+Consultas de endereço são comuns em processos de **cadastro de clientes, onboarding, validação de dados e operações comerciais**. O projeto mostra como uma informação externa pode ser incorporada a um fluxo operacional.
 
-## Exemplo de uso
+## Próximas evoluções
 
-```text
-Digite o CEP somente com números: 01001000
+- Validação mais robusta
+- Interface gráfica ou web
+- Cache de consultas
+- Persistência de dados
+- Testes automatizados
+- Integração com cadastro de clientes
 
-=== ENDEREÇO ENCONTRADO ===
-CEP: 01001-000
-Logradouro: Praça da Sé
-Bairro: Sé
-Cidade: São Paulo
-Estado: SP
+## Autor
+
+**Daniel Fernando Martins**
