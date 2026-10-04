@@ -31,6 +31,26 @@ Demonstrar consumo de API REST, tratamento de respostas JSON e validação de en
 - Tratamento de exceções
 - Validação de entrada
 - Separação de fluxo em funções
+- Diagnóstico básico de falha de comunicação
+- Leitura de resposta de serviço externo
+- Tratamento de cenário inválido para o usuário
+
+## Visão para Operações de TI
+
+Este projeto se conecta diretamente com atividades de suporte e operações porque exige entender **requisição, resposta, erro, indisponibilidade e validação de dados**.
+
+### Como eu investigaria uma falha
+
+1. Validaria o dado informado pelo usuário.
+2. Confirmaria conectividade com o serviço externo.
+3. Verificaria o código de resposta HTTP.
+4. Analisaria o JSON retornado.
+5. Separaria erro de entrada, erro da aplicação e indisponibilidade externa.
+6. Registraria a causa e a ação tomada.
+
+## Como explicar em entrevista
+
+> "Esse projeto é simples, mas é muito útil para suporte e operações porque trabalha com um fluxo real de integração. Se a consulta falha, eu preciso descobrir se o problema está no dado informado, na conexão, na API externa ou no tratamento da resposta. Esse raciocínio de diagnóstico é o que quero levar para uma função operacional de TI."
 
 ## Tecnologias
 
